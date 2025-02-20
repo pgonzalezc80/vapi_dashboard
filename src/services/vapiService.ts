@@ -8,7 +8,7 @@ export const vapiService = {
   async listCalls(): Promise<ListCallsResponse> {
     const params = new URLSearchParams({
       assistantId: ASSISTANT_ID,
-      limit: '100'
+      limit: '1000'
     });
 
     const response = await fetch(`${VAPI_API_URL}/call?${params}`, {
